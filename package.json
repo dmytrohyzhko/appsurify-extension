@@ -10,9 +10,12 @@
     "package": "plasmo package"
   },
   "dependencies": {
+    "@plasmohq/storage": "^1.12.0",
     "plasmo": "0.89.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "rrweb": "2.0.0-alpha.4",
+    "rrweb-player": "1.0.0-alpha.4",
     "tailwindcss": "3.4.1"
   },
   "devDependencies": {
@@ -21,6 +24,7 @@
     "@types/node": "20.11.5",
     "@types/react": "18.2.48",
     "@types/react-dom": "18.2.18",
+    "@rrweb/types": "2.0.0-alpha.17",
     "daisyui": "^4.12.11",
     "postcss": "8.4.33",
     "prettier": "3.2.4",
@@ -29,6 +33,11 @@
   "manifest": {
     "host_permissions": [
       "https://*/*"
+    ],
+    "permissions": [
+      "scripting",
+      "tabs",
+      "activeTab"
     ]
   }
 }
